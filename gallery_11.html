@@ -21,16 +21,14 @@
     <link rel="stylesheet" href="assets/css/Highlight-Clean.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"> -->
+    <link rel="icon" type="image/png" href="assets/icon.ico">
     <link rel="manifest" href="site.webmanifest">
     <meta name="robots" content="noindex">
 
-    <meta property="og:site_name" content="MVDream" />
+    <meta property="og:site_name" content="Director3D" />
     <meta property="og:type" content="video.other" />
-    <meta property="og:title" content="MVDream: Multi-view Diffusion for 3D Generation" />
-    <meta property="og:description" content="MVDream: Multi-view Diffusion for 3D Generation, 2023." />
+    <meta property="og:title" content="Director3D: Real-world Camera Trajectory and 3D Scene Generation from Text" />
+    <meta property="og:description" content="Director3D: Real-world Camera Trajectory and 3D Scene Generation from Text, 2024." />
     <meta property="og:url" content="" />
 
     <script src="assets/js/video_comparison.js"></script>
@@ -38,81 +36,11 @@
 </head>
 
 <body>
-    <div class="highlight-clean" style="padding-bottom: 10px;">
-        <!-- <div class="container" style="max-width: 1024px; margin-bottom: 20px;">
-            <h1 class="text-center"><b>MVDream</b>: Multi-view Diffusion for 3D Generation</h1>
-        </div>
-        <div class="container" style="max-width: 980px; margin-bottom: 20px;">
-            <div class="row authors">
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="https://seasonsh.github.io/">Yichun Shi<sup>1</sup> </a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a href="https://pengwangucla.github.io/peng-wang.github.io/">Peng Wang<sup>1</sup></a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="https://jianglongye.com/">Jianglong Ye<sup>2</sup></a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="https://mai-t-long.com/">Long Mai<sup>1</sup></a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="https://likojack.github.io/kejieli/#/home">Kejie Li<sup>1</sup></a></h5>
-                </div>
-                <div class="col">
-                    <h5 class="text-center"><a class="text-center" href="">Xiao Yang<sup>1</sup></a></h5>
-                </div>
-            </div>
-            <div class="row affiliations">
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"><sup>1</sup>ByteDance</a></h6>
-                </div>
-                <div class="col">
-                    <h6 class="text-center"><a class="text-center"><sup>2</sup>University of California San Diego</a></h6>
-                </div>
-            </div>
-        </div> -->
-        <!-- <div class="buttons" style="margin-top: 8px; margin-bottom: 8px;">
-            <a class="btn btn-light" role="button" href="https://arxiv.org/abs/2308.16512">
-                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
-                    <path fill="currentColor" d="M16 0H8C6.9 0 6 .9 6 2V18C6 19.1 6.9 20 8 20H20C21.1 20 22 19.1 22 18V6L16 0M20 18H8V2H15V7H20V18M4 4V22H20V24H4C2.9 24 2 23.1 2 22V4H4M10 10V12H18V10H10M10 14V16H15V14H10Z"></path>
-                </svg>Paper
-            </a>
-            <a class="btn btn-light" role="button" href="./index.html">
-                <svg style="visibility:hidden;width:0px;height:24px;margin-left:-12px;margin-right:12px" width="0px" height="24px" viewBox="0 0 375 531">
-                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
-                </svg>
-                Project
-            </a>
-            <a class="btn btn-light" role="button" href="https://github.com/bytedance/MVDream">
-                <svg xmlns="http://www.w3.org/2000/svg" style="width:24px;height:24px;margin-left:-12px;margin-right:12px" viewBox="0 0 24 24">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 
-                            1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 
-                            3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 
-                            2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"></path>
-                </svg>
-                Code
-            </a>
-            <a class="btn btn-light disabled border border-dark" aria-disabled="true" role="button" href="">
-                <svg style="width:24px;height:24px;margin-left:-12px;margin-right:12px" width="24px" height="24px" viewBox="0 0 375 531">
-                    <polygon stroke="#000000" points="0.5,0.866 459.5,265.87 0.5,530.874 "></polygon>
-                </svg>
-                Gallery
-            </a>
-        </div> -->
-        <!-- <div class="container" style="max-width: 768px;">
-            <div class="row authors">
-                <div class="col-sm-12">
-                    <h5 class="text-center" style="text-align: center">Authors anonymized</h5>
-                </div>
-            </div>    
-        </div> -->
-    </div>
     <hr class="divider" />
     <div class="container" style="max-width: 1024px;">
         <div class="row">
             <div class="col-sm-12">
-                <h2>Video Examples (111-120 / 270)</h2>
+                <h2>Video Gallery of Director3D (111-120 / 270)</h2>
                 <!-- <p>Generating more results for fun here. Check <a href="./test_0.html">this page</a> for the comparison over 40 test prompts in our experiments.</p> -->
             </div>
         </div>
@@ -120,73 +48,73 @@
             
         <div class="col-md-15 captioned_videos" id="res_110" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A high mountain trail, edged by wildflowers and offering sweeping views of the valley and distant peaks._0.mp4
+                <source data-src="static/gallery/A massive observatory dome in a remote location, open to a star-filled sky, with telescopes pointed towards distant galaxies._3.mp4
 " type="video/mp4"></source>
             </video>
-            <p class="compare-caption">A high mountain trail, edged by wildflowers and offering sweeping views of the v...</p>
+            <p class="compare-caption">A massive observatory dome in a remote location, o...</p>
         </div>
         <div class="col-md-15 captioned_videos" id="res_111" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/gallery/A sprawling solar farm at midday, panels glinting under the harsh sun amidst a barren landscape._0.mp4
+" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">A sprawling solar farm at midday, panels glinting ...</p>
+        </div>
+        <div class="col-md-15 captioned_videos" id="res_112" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/gallery/A vast desert with rolling sand dunes under a scorching sun, and a distant mountain range on the horizon._0.mp4
+" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">A vast desert with rolling sand dunes under a scor...</p>
+        </div>
+        <div class="col-md-15 captioned_videos" id="res_113" style="margin-top: 0px; margin-bottom: 0px ;">
+            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
+                <source data-src="static/gallery/A lone, ancient tree stands tall in the middle of a quiet field_2.mp4
+" type="video/mp4"></source>
+            </video>
+            <p class="compare-caption">A lone, ancient tree stands tall in the middle of ...</p>
+        </div>
+        <div class="col-md-15 captioned_videos" id="res_114" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
                 <source data-src="static/gallery/A delicate china teacup resting on a lace doily_3.mp4
 " type="video/mp4"></source>
             </video>
             <p class="compare-caption">A delicate china teacup resting on a lace doily</p>
         </div>
-        <div class="col-md-15 captioned_videos" id="res_112" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A steaming mug of hot chocolate with whipped cream_2.mp4
-" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">A steaming mug of hot chocolate with whipped cream</p>
-        </div>
-        <div class="col-md-15 captioned_videos" id="res_113" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A dense marshland under a full moon, where fog clings to the water and the sounds of unseen creatures ripple through the reeds._0.mp4
-" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">A dense marshland under a full moon, where fog clings to the water and the sound...</p>
-        </div>
-        <div class="col-md-15 captioned_videos" id="res_114" style="margin-top: 0px; margin-bottom: 0px ;">
-            <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A bustling coral reef, alive with the vibrant dance of fish and swaying plants, while shadows of larger creatures loom in the deep blue beyond._0.mp4
-" type="video/mp4"></source>
-            </video>
-            <p class="compare-caption">A bustling coral reef, alive with the vibrant dance of fish and swaying plants, ...</p>
-        </div>
         <div class="col-md-15 captioned_videos" id="res_115" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A pair of binoculars on a mountain peak_2.mp4
+                <source data-src="static/gallery/A book with a leather cover_2.mp4
 " type="video/mp4"></source>
             </video>
-            <p class="compare-caption">A pair of binoculars on a mountain peak</p>
+            <p class="compare-caption">A book with a leather cover</p>
         </div>
         <div class="col-md-15 captioned_videos" id="res_116" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A stone bridge arching over a babbling brook, encrusted with moss and echoing with stories_0.mp4
+                <source data-src="static/gallery/A forgotten Victorian garden, with overgrown hedges, a sundial, and a fountain choked by vines._3.mp4
 " type="video/mp4"></source>
             </video>
-            <p class="compare-caption">A stone bridge arching over a babbling brook, encrusted with moss and echoing wi...</p>
+            <p class="compare-caption">A forgotten Victorian garden, with overgrown hedge...</p>
         </div>
         <div class="col-md-15 captioned_videos" id="res_117" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A disused railway track, overgrown with grass and wild bushes, curving out of sight through a tranquil woodland._2.mp4
+                <source data-src="static/gallery/A high-rise rooftop garden, with patches of greenery and flowers against the backdrop of a bustling city skyline._3.mp4
 " type="video/mp4"></source>
             </video>
-            <p class="compare-caption">A disused railway track, overgrown with grass and wild bushes, curving out of si...</p>
+            <p class="compare-caption">A high-rise rooftop garden, with patches of greene...</p>
         </div>
         <div class="col-md-15 captioned_videos" id="res_118" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/a brown cowboy hat_0.mp4
+                <source data-src="static/gallery/a chair that looks like fruit_2.mp4
 " type="video/mp4"></source>
             </video>
-            <p class="compare-caption">a brown cowboy hat</p>
+            <p class="compare-caption">a chair that looks like fruit</p>
         </div>
         <div class="col-md-15 captioned_videos" id="res_119" style="margin-top: 0px; margin-bottom: 0px ;">
             <video class="video lazy" loop playsinline autoplay muted style="width: 100%">
-                <source data-src="static/gallery/A weather-beaten wooden bat_1.mp4
+                <source data-src="static/gallery/An expansive lava field, cooled and blackened, with cracks that reveal the fiery glow beneath under a starlit sky._1.mp4
 " type="video/mp4"></source>
             </video>
-            <p class="compare-caption">A weather-beaten wooden bat</p>
+            <p class="compare-caption">An expansive lava field, cooled and blackened, wit...</p>
         </div>
         </div>
         <div class="row" style="margin-bottom: 0px;">
